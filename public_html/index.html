@@ -2,7 +2,8 @@
 <!--
 Author: Justin Nichols
 Class: CSC337 (Web Development)
-Purpose:
+Purpose: This page encrypts a string using two basic ciphers.
+         The first is a Caesar cipher, and the second is a square cipher.
 -->
 
 <html lang=en-US>
@@ -13,14 +14,35 @@ Purpose:
         <link rel=stylesheet href="css/style.css">
     </head>
     <body>
-        <header>
-
-        </header>
-        <div id="content">
-
+        <div id="input_area">
+            <h1>Welcome to the Jumble</h1>
+            <div class="input_widget">
+                <input type="text" id="plaintext" onchange="">
+            </div>
+            <div class="input_widget">
+                <label for="key" id="key_label">1</label>
+                <input type="range" id="key" min=1 max=26 onchange="">
+            </div>
+            <div class="input_widget">
+                <input type="button" id="update_square" value="Update Square" onclick="">
+            </div>
+            <div class="input_widget">
+                <table id="square">
+                    <tr><td>a</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>s</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>d</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>f</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>g</td><td>f</td><td>d</td><td>s</td><td>a</td></tr>
+                </table>
+            </div>
         </div>
-        <footer>
-
-        </footer>
+        <div id="output_area">
+            <div id="caesar_area">
+                caesar area
+            </div>
+            <div id="square_area">
+                square area
+            </div>
+        </div>
     </body>
 </html>

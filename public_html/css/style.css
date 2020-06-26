@@ -1,0 +1,61 @@
+/*
+Author: Justin Nichols
+Class: CSC337 (Web Development)
+Purpose: This page adds style to the index.html page.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1 {
+    width: 70%;
+    margin: 20px auto;
+}
+
+table, tr, td {
+    border: 1px solid red;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.input_widget {
+    margin: 20px auto;
+}
+
+#input_area, #output_area {
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+#input_area {
+    float: left;
+    width: 34%;
+    background-color: black;
+}
+
+#output_area {
+    float: right;
+    width: 66%;
+}
+
+#caesar_area, #square_area {
+    height: 50%;
+}
+
+#caesar_area {
+    background-color: purple;
+}
+
+#square_area {
+    background-color: darkblue;
+}
