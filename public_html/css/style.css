@@ -27,8 +27,19 @@ table {
     margin: 20px auto;
 }
 
+td {
+    padding: 5px;
+    font-family: courier;
+}
+
 .input_widget {
     margin: 20px auto;
+}
+
+.cipher_text {
+    padding: 30px;
+    font-size: 45px;
+    word-break: break-all;
 }
 
 #input_area, #output_area {
