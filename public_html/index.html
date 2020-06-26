@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <!--
 Author: Justin Nichols
 Class: CSC337 (Web Development)
@@ -8,26 +9,30 @@ Purpose: This page encrypts a string using two basic ciphers.
 
 <html lang=en-US>
     <head>
-        <title></title>    
+        <title>Welcome to the Jumble</title>    
         <meta charset="UTF-8">
         <meta name="author" content="Justin Nichols">
         <link rel=stylesheet href="css/style.css">
+        <script src="js/jumble.js"></script>
     </head>
-    <body>
+    <body onload="initPage()">
         <div id="input_area">
             <h1>Welcome to the Jumble</h1>
             <div class="input_widget">
-                <input type="text" id="plaintext" onchange="">
+                <input type="text" id="plaintext" value="Welcome to the Jumble."
+                    onchange="setCipherTexts()">
             </div>
             <div class="input_widget">
-                <label for="key" id="key_label">1</label>
-                <input type="range" id="key" min=1 max=26 onchange="">
+                <label for="key" id="caesar_key_label">1</label>
+                <input type="range" id="caesar_key" min=1 max=26 
+                    onchange="setCaesarKey()">
             </div>
             <div class="input_widget">
-                <input type="button" id="update_square" value="Update Square" onclick="">
+                <input type="button" id="update_square_key" value="Update Square" 
+                    onclick="setSquare()">
             </div>
             <div class="input_widget">
-                <table id="square">
+                <table id="square_key">
                     <tr><td>a</td><td></td><td></td><td></td><td></td></tr>
                     <tr><td>s</td><td></td><td></td><td></td><td></td></tr>
                     <tr><td>d</td><td></td><td></td><td></td><td></td></tr>
