@@ -13,23 +13,22 @@ Purpose: This page encrypts a string using two basic ciphers.
         <meta charset="UTF-8">
         <meta name="author" content="Justin Nichols">
         <link rel=stylesheet href="css/style.css">
-        <script src="js/jumble.js"></script>
     </head>
-    <body onload="initPage()">
+    <body>
         <div id="input_area">
             <h1>Welcome to the Jumble</h1>
             <div class="input_widget">
                 <input type="text" id="plaintext" value="Welcome to the Jumble."
-                    onchange="setCipherTexts()">
+                    oninput="setCipherTexts()">
             </div>
             <div class="input_widget">
-                <label for="key" id="caesar_key_label">1</label>
-                <input type="range" id="caesar_key" min=1 max=26 
-                    onchange="setCaesarKey()">
+                <span id="caesar_key_label"></span>
+                <input type="range" id="caesar_key" min=0 max=26 value=0 
+                    oninput="setCaesarKeyLabel()">
             </div>
             <div class="input_widget">
                 <input type="button" id="update_square_key" value="Update Square" 
-                    onclick="setSquare()">
+                    onclick="setSquareKey()">
             </div>
             <div class="input_widget">
                 <table id="square_key">
@@ -43,11 +42,12 @@ Purpose: This page encrypts a string using two basic ciphers.
         </div>
         <div id="output_area">
             <div id="caesar_area">
-                <div class="cipher_text">caesar area</div>
+                <div id="caesar_text" class="cipher_text">caesar area</div>
             </div>
             <div id="square_area">           
-                <div class="cipher_text">square area</div>
+                <div id="square_text" class="cipher_text">square area</div>
             </div>
         </div>
+        <script src="js/jumble.js"></script>
     </body>
 </html>

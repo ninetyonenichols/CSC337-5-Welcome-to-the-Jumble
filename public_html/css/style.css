@@ -70,3 +70,7 @@ td {
 #square_area {
     background-color: darkblue;
 }
+
+#caesar_key_label {
+    vertical-align: top;
+}
