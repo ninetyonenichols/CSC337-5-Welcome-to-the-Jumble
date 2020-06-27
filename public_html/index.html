@@ -24,20 +24,14 @@ Purpose: This page encrypts a string using two basic ciphers.
             <div class="input_widget">
                 <span id="caesar_key_label"></span>
                 <input type="range" id="caesar_key" min=0 max=26 value=0 
-                    oninput="setCaesarKeyLabel()">
+                    oninput="setCaesarKeyLabel(); setCaesarText()">
             </div>
             <div class="input_widget">
                 <input type="button" id="update_square_key" value="Update Square" 
-                    onclick="setSquareKey()">
+                    onclick="shuffleAlphabet(); setSquareKey(); setSquareText()">
             </div>
             <div class="input_widget">
-                <table id="square_key">
-                    <tr><td>a</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>s</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>d</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>f</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>g</td><td>f</td><td>d</td><td>s</td><td>a</td></tr>
-                </table>
+                <table id="square_key"></table>
             </div>
         </div>
         <div id="output_area">
